@@ -1,0 +1,8 @@
+.git
+*.vscode
+package-lock.json
+*copy*
+gulpfile.js
+
+
+_docs/*
