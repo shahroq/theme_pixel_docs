@@ -20,6 +20,7 @@
 - [16. Add the Cookie Disclaimer](#16-add-the-cookie-disclaimer)
 - [17. Change the Owl Slider template height/Button Label](#17-change-the-owl-slider-template-heightbutton-label)
 - [18. Manually add new classes, change styles, ...](#18-manually-add-new-classes-change-styles-)
+- [18.1 Manually add new scripts](#181-manually-add-new-scripts)
 - [19. Change the Font Family](#19-change-the-font-family)
 - [20. Setup the Coming Soon page](#20-setup-the-coming-soon-page)
 - [21. Make the Top Bar sticky](#21-make-the-top-bar-sticky)
@@ -30,10 +31,14 @@
 - [25.1. Adding additional color overlays](#251-adding-additional-color-overlays)
 - [26. Translating to other languages](#26-translating-to-other-languages)
 - [27. Replacing the Pixel logo with your own logo](#27-replacing-the-pixel-logo-with-your-own-logo)
+- [27.1 Assigning a specific logo for a page](#271-assigning-a-specific-logo-for-a-page)
 - [28. Using customized auth pages (Login, Register, Forgot Password)](#28-using-customized-auth-pages-login-register-forgot-password)
 - [29. Replacing alternative home pages with the default home page](#29-replacing-alternative-home-pages-with-the-default-home-page)
 - [30. Assigning theme defined margin classes to a block](#30-assigning-theme-defined-margin-classes-to-a-block)
 - [31. Changing the theme footer color](#31-changing-the-theme-footer-color)
+- [32. Remove login/logout link from the footer](#32-remove-loginlogout-link-from-the-footer)
+- [32.1 Remove Account Menu from the footer](#321-remove-account-menu-from-the-footer)
+- [33. Fix file_exists() issue](#33-fix-file_exists-issue)
 
 
 ### 1. Change the theme accent color
@@ -127,11 +132,14 @@ The space between menu items can be tweaked in:
 
 ### 18. Manually add new classes, change styles, ...
 Pixel comes with two specific files which house all your changes without losing them in next updates. For using them:
-1. Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `custom.dev.less` (This will automatically include new file into CSS without losing it in next theme update)
-2. Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `variables.dev.less` (This will automatically include a new file into CSS without losing it on next theme update). You can copy each variable from `variables.less` to `variables.dev.less` and change it as you intend to.
-3. [only for 5.7.x] Open `\theme_pixel\themes\pixel\css\style5.7.less` and comment out line 4 & 45
+1. Create a folder in `\application\config\` and name it `pixel_theme`
+2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` (This will automatically include the new file into CSS without losing it in the next theme updates)
+3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less` (This will automatically include the new file into CSS without losing it on the next theme updates). You can copy each variable from `variables.less` to `variables.dev.less` and change it as you intend to.
+4. [only for 5.7.x] Open `\theme_pixel\themes\pixel\css\style5.7.less` and comment out line 4 & 45
+5. Clear the site cache.
 
- 
+### 18.1 Manually add new scripts
+1. Copy & Rename `\theme_pixel\themes\pixel\js\custom.dev.js.tmp` to `\application\config\pixel_theme\custom.dev.js` (This will automatically include the new file into the site footer without losing it in the next theme updates)
 
 ### 19. Change the Font Family
 Pixel comes with exact instruction on how to manually change the embed and assign new fonts to your site:
@@ -194,6 +202,11 @@ Pixel already contains 2 `color-overlay-black` & `color-overlay-white` classes. 
 `Dashboard > Pages & Theme > Pixel Options > Header > Navigation > Standard Logo, Retina Logo, Standard Logo (Dark), Retina Logo (Dark)`
 
 
+### 27.1 Assigning a specific logo for a page
+Copy the page-specific logo in `\application\config\pixel_theme\` folder and rename to `<your-main-logo-name>-<cID>`. Multiple logos including dark, retina etc can be assigned for a page.
+(`cID` is your page ID)
+
+
 ### 28. Using customized auth pages (Login, Register, Forgot Password)
 Add below code to `\application\config\app.php`
 ```PHP
@@ -220,3 +233,18 @@ On the Sitemap drag the alternative page onto default homepage, then select Copy
 
 ### 31. Changing the theme footer color
 Once the theme has been installed, the footer color can be changed globally by using the built-in theme design customizer. Documentation on how to use this core functionality can be found [here](https://documentation.concrete5.org/editors/in-page-editing/the-toolbar/page-edit-drop-down/design).
+
+
+### 32. Remove login/logout link from the footer
+`Dashboard > Pages & Theme > Pixel Options > Footer > Remove Login/Logout Link`
+
+### 32.1 Remove Account Menu from the footer
+`Dashboard > System & Settings > Public Profiles > Show the account menu when logged in.`
+
+
+### 33. Fix file_exists() issue
+This problem, affecting some servers, is caused by less interpretor library that has been used in concrete5. If you face this issue, starting from 2.3.0, you can fix it easily by following these steps:
+1. Create a folder in `\application\config\` and name it `pixel_theme`
+2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` 
+3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less`
+4. Clear the site cache.
