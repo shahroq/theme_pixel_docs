@@ -1,11 +1,15 @@
-## concrete5 [Pixel Theme](https://www.concrete5.org/marketplace/themes/pixel/) Documentation v2.3.0
+## concrete5 [Pixel Theme](https://www.concrete5.org/marketplace/themes/pixel/) Documentation v2.4.0
 
-**[Pixel](https://www.concrete5.org/marketplace/themes/pixel/)** is a modern, multipurpose, responsive concrete5 theme built on top of the Bootstrap v3.3. The theme provides multiple layouts, and plenty of blocks, templates, classes, and options.
+To read docs for other versions, switch to respective branches.
 
 Contributions are welcome via [issues](https://github.com/shahroq/theme_pixel_docs/issues) and [pull requests](https://github.com/shahroq/theme_pixel_docs/pulls).
 
 ### Table of Contents
-- [Installation](Installation.md)
-- [Instructions](Instructions.md)
-- [Blocks, Templates, Classes](BlocksTemplatesClasses.md)
-- [Mega Menu](MegaMenu.md)
+- [Installation](pages/installation.md)
+- [Instructions](pages/instructions.md)
+- [Mega Menu](pages/mega-menu.md)
+- [Custom Blocks](pages/custom-blocks.md)
+- [Block Templates](pages/block-templates.md)
+- [Block Classes](pages/block-classes.md)
+- [Helper Classes](pages/helper-classes.md)
+- [Snippets](pages/snippets.md)
