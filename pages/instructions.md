@@ -44,7 +44,7 @@
 - [35. Create a non-clickable menu item](#35-create-a-non-clickable-menu-item)
 - [36. Verify whether the theme has been installed, upgraded, or uninstalled completely](#36-verify-whether-the-theme-has-been-installed-upgraded-or-uninstalled-completely)
 - [37. Theme has not been installed, upgraded completely](#37-theme-has-not-been-installed-upgraded-completely)
-- [38. Find out the block/template is used on demo/your site](#38-find-out-the-blocktemplate-is-used-on-demoyour-site)
+- [38. Find out the block/template used on demo/your site](#38-find-out-the-blocktemplate-used-on-demoyour-site)
 
 
 
@@ -65,7 +65,7 @@ Once the theme has been installed, the accent color can be changed globally by u
 
 
 ### 5. Navigation Icon 
-Icons that used in Pixel are `Font Awesome` icons Version 4.7. So for changing them, you need to specify the title of icons as they have named in the below link. Remember you only need the part that comes after `fa-`.
+Icons used in Pixel are `Font Awesome` icons Version 4.7. So in order to chnage them, you need to specify the title of icons as they have been named in the below link. Remember you only need the part that comes after `fa-`.
 
 [https://fontawesome.com/v4.7.0/icons/](https://fontawesome.com/v4.7.0/icons/)
 
@@ -138,7 +138,7 @@ The space between menu items can be tweaked in:
 
 
 ### 18. Manually add new classes, change styles, ...
-Pixel comes with two specific files which house all your changes without losing them in next updates. For using them:
+Pixel comes with two specific files which house all your changes without losing them in the next updates. For using them:
 1. Create a folder in `\application\config\` and name it `pixel_theme`
 2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` (This will automatically include the new file into CSS without losing it in the next theme updates)
 3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less` (This will automatically include the new file into CSS without losing it on the next theme updates). You can copy each variable from `variables.less` to `variables.dev.less` and change it as you intend to.
@@ -156,7 +156,7 @@ PS1: Prior to 2.4, the custom files were placed in `\theme_pixel\themes\pixel\cs
 Pixel comes with exact instruction on how to manually change the embed and assign new fonts to your site:
 1. First, proceed with the two steps at Instruction #18
 2. Include your fonts at `\theme_pixel\themes\pixel\css\less\custom.dev.less` (A sample is provided in this file which you can uncomment/use it.)
-3. Copy the lines that are responsible for assigning the fonts into the new `variables.dev.less` file. Some samples also provided in this file which can be uncommented for your use case. 
+3. Copy the lines that are responsible for assigning the fonts into the new `variables.dev.less` file. Some samples are also provided in this file which can be uncommented for your use case. 
  
 
 ### 20. Setup the Coming Soon page
@@ -186,7 +186,7 @@ Set `Main Area Number` page attribute
 ### 24. Using Express Objects
 Pixel uses `Express Objects` for creating a list of Clients, Testimonials & Team Members. This feature is available for concrete5 version 8.1+.
 
-When being installed, the theme creates these express objects. All you need to do is adding entries via `/dashboard/express/entries`. After adding entries, you can display them with the core `Express Entry List` block and select one of the templates provided by the theme.
+When being installed, the theme creates these express objects. All you need to do is add entries via `/dashboard/express/entries`. After adding entries, you can display them with the core `Express Entry List` block and select one of the templates provided by the theme.
  
 
 ### 25. Parallax Effect
@@ -211,7 +211,7 @@ Pixel already contains 2 `color-overlay-black` & `color-overlay-white` classes. 
 
 
 ### 26. Translating to other languages
-1. Get the latest translated version of the Pixel in your language [here](https://translate.concrete5.org/translate/package/theme_pixel). (If you already have more completed version, translated into your language, you can complete it online for future users, or send it via a direct message to the Pixel developer, so we can do it.)
+1. Get the latest translated version of the Pixel in your language [here](https://translate.concrete5.org/translate/package/theme_pixel). (If you already have a more completed version, translated into your language, you can complete it online for future users, or send it via a direct message to the Pixel developer, so we can do it.)
 2. Copy translated `messages.mo` into `\packages\theme_pixel\languages\{language}_{country}\LC_MESSAGES\messages.mo`
 
   
@@ -238,7 +238,7 @@ Add below code to `\application\config\app.php`
 
 
 ### 29. Replacing alternative home pages with the default home page
-On the Sitemap drag the alternative page onto default homepage, then select Copy Page: Replace `Home` with the copy of `Home 1`.
+On the Sitemap drag the alternative page onto the default homepage, then select Copy Page: Replace `Home` with the copy of `Home 1`.
 
 
 ### 30. Assigning theme defined margin classes to a block
@@ -263,7 +263,7 @@ Once the theme has been installed, the footer color can be changed globally by u
 
 
 ### 33. Fix file_exists() issue
-This problem, affecting some servers, is caused by less interpretor library that has been used in concrete5. If you face this issue, starting from 2.3.0, you can fix it easily by following these steps:
+This problem, affecting some servers, is caused by the less interpreter library that has been used in concrete5. If you face this issue, starting from 2.3.0, you can fix it easily by following these steps:
 1. Create a folder in `\application\config\` and name it `pixel_theme`
 2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` 
 3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less`
@@ -293,7 +293,7 @@ After confirming the theme has not been installed or upgraded thoroughly, these 
 1. Increase PHP `max_execution_time`: In many cases, when installing the theme with sample contents, the default value of `max_execution_time` (30 seconds) is not enough for the server to create all the sample pages in your c5 instance. For fixing this, the value can be increased temporarily and the theme should be reinstalled afterward.
 
 
-### 38. Find out the block/template is used on demo/your site
+### 38. Find out the block/template used on demo/your site
 On Pixel, all blocks are wrapped inside a container that has data attributes for signaling the information about that block. By inspecting a block on the browser with (Firefox, Chrome, etc) inspector, you will see 3 data attributes:
 
 1. data-area="Main : xxx" : the area of the block

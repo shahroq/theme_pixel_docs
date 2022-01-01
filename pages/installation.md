@@ -1,7 +1,7 @@
 ## Installation
 
 ### Installation Instructions
-1. Download package and extract files into your site's `/package` folder.
+1. Download the package and extract files into your site's `/package` folder.
 2. Log in to your site as an admin
 3. Click on `Extend concrete5` and press the `Pixel Theme` Install button.
 4. In order to verify if the theme has been installed completely, check `Instructions` page #36, #37.
@@ -10,7 +10,7 @@
 ### After Installation
 If the theme were installed with the sample contents, you should notice a number of discrepancies between your site and the theme demo site due to some shortcomings when it comes to the sample contents. The good news is that these differences can be easily fixed. Below, a list of these issues and how they can be addressed are listed:
 
-1. The CTA block below the slider on homepage and many other pages are not 'Full Width'
+1. The CTA block below the slider on the homepage and many other pages are not 'Full Width'
     - Click on the `CTA` block and select `Design & Custom Template`.
     - Click on the `Cog` icon beside the `Cancel` button.
     - On `Block Container Class` choose `Disable Grid Container`, and save the block.
