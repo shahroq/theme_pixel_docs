@@ -33,6 +33,7 @@
 - [26. Translating to other languages](#26-translating-to-other-languages)
 - [27. Replacing the Pixel logo with your own logo](#27-replacing-the-pixel-logo-with-your-own-logo)
 - [27.1 Assigning a different logo for a page](#271-assigning-a-different-logo-for-a-page)
+- [27.2 Optimizing your logo size for the theme header](#272-optimizing-your-logo-size-for-the-theme-header)
 - [28. Using customized auth pages (Login, Register, Forgot Password)](#28-using-customized-auth-pages-login-register-forgot-password)
 - [29. Replacing alternative home pages with the default home page](#29-replacing-alternative-home-pages-with-the-default-home-page)
 - [30. Assigning theme defined margin classes to a block](#30-assigning-theme-defined-margin-classes-to-a-block)
@@ -222,6 +223,9 @@ Pixel already contains 2 `color-overlay-black` & `color-overlay-white` classes. 
 ### 27.1 Assigning a different logo for a page
 Copy the page-specific logo in `\application\config\pixel_theme\` folder and rename to `<your-main-logo-name>-<cID>`. Multiple logos including dark, retina etc can be assigned for a page.
 (`cID` is your page ID)
+
+### 27.2 Optimizing your logo size for the theme header
+The theme contains two files (`\themes\pixel\images\logo.psd` & `\themes\pixel\images\logo@2x.psd`), which helps you place your logo inside the container. By resizing the logo to be contained inside the `Guide` lines, you can generate images that fit better inside the header. Also, the width needs to be adjusted, as very long logos might overlap the menu and search icon.
 
 
 ### 28. Using customized auth pages (Login, Register, Forgot Password)
