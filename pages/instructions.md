@@ -22,6 +22,7 @@
 - [18. Manually add new classes, change styles, ...](#18-manually-add-new-classes-change-styles-)
 - [18.1 Manually add new scripts](#181-manually-add-new-scripts)
 - [19. Change the Font Family](#19-change-the-font-family)
+- [19.1. Remove embeded google fonts](#191-remove-embeded-google-fonts)
 - [20. Setup the Coming Soon page](#20-setup-the-coming-soon-page)
 - [21. Enable the Top Bar area](#21-enable-the-top-bar-area)
 - [21.1 Make the Top Bar sticky](#211-make-the-top-bar-sticky)
@@ -159,6 +160,12 @@ Pixel comes with exact instruction on how to manually change the embed and assig
 2. Include your fonts at `\theme_pixel\themes\pixel\css\less\custom.dev.less` (A sample is provided in this file which you can uncomment/use it.)
 3. Copy the lines that are responsible for assigning the fonts into the new `variables.dev.less` file. Some samples are also provided in this file which can be uncommented for your use case. 
  
+ ### 19.1. Remove embeded google fonts
+As a part of the theme, Pixel loads a couple of google fonts. If you need these fonts to be removed from the final produced CSS file, you can do it by choosing `no-external-fonts` preset:
+```
+Cog icon (concrete toolbar) > Design > Theme > Customize > Preset > No External Fonts
+```
+
 
 ### 20. Setup the Coming Soon page
 Change page type template to `Coming Soon`, then edit page properties, timer and background image, at `Dashboard > Pages & Theme > Pixel Options > Pages > Coming Soon`. You can also add blocks like Content and Social Icons via page editing UI.
