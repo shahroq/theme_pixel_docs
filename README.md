@@ -1,4 +1,4 @@
-## concrete5 [Pixel Theme](https://www.concrete5.org/marketplace/themes/pixel/) Documentation v2.4.0
+## ConcreteCMS [Pixel Theme](https://www.concrete5.org/marketplace/themes/pixel_9/) Documentation v9.0.0
 
 To read docs for other versions, switch to respective branches.
 
