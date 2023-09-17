@@ -7,9 +7,5 @@ Contributions are welcome via [issues](https://github.com/shahroq/theme_pixel_do
 ### Table of Contents
 - [Installation](pages/installation.md)
 - [Instructions](pages/instructions.md)
-- [Mega Menu](pages/mega-menu.md)
-- [Custom Blocks](pages/custom-blocks.md)
-- [Block Templates](pages/block-templates.md)
-- [Block Classes](pages/block-classes.md)
-- [Helper Classes](pages/helper-classes.md)
+- [Customizing Blocks](pages/customizing-blocks.md)
 - [Snippets](pages/snippets.md)

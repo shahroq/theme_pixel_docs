@@ -12,7 +12,7 @@
 - [8. Dark Header](#8-dark-header)
 - [9. Add a label to a Navigation item](#9-add-a-label-to-a-navigation-item)
 - [10. Not enough space for all menu items, so it falls below the header area](#10-not-enough-space-for-all-menu-items-so-it-falls-below-the-header-area)
-- [11. Add & setup the Search in the main menu](#11-add--setup-the-search-in-the-main-menu)
+- [11. Add \& setup the Search in the main menu](#11-add--setup-the-search-in-the-main-menu)
 - [12. Change/Disable the Page Title Area](#12-changedisable-the-page-title-area)
 - [13. Dark Footer](#13-dark-footer)
 - [14. Add the 'Back to Top' button](#14-add-the-back-to-top-button)
@@ -26,7 +26,6 @@
 - [20. Setup the Coming Soon page](#20-setup-the-coming-soon-page)
 - [21. Enable the Top Bar area](#21-enable-the-top-bar-area)
 - [21.1 Make the Top Bar sticky](#211-make-the-top-bar-sticky)
-- [22. Fix the CTA below the slider (Full Width)](#22-fix-the-cta-below-the-slider-full-width)
 - [23. Add additional 'Main' Areas](#23-add-additional-main-areas)
 - [24. Using Express Objects](#24-using-express-objects)
 - [25. Parallax Effect](#25-parallax-effect)
@@ -41,7 +40,7 @@
 - [31. Changing the theme footer color](#31-changing-the-theme-footer-color)
 - [32. Remove login/logout link from the footer](#32-remove-loginlogout-link-from-the-footer)
 - [32.1 Remove Account Menu from the footer](#321-remove-account-menu-from-the-footer)
-- [33. Fix file_exists() issue](#33-fix-file_exists-issue)
+- [33. Fix file\_exists() issue](#33-fix-file_exists-issue)
 - [34. Change the email/telephone in Social Link block](#34-change-the-emailtelephone-in-social-link-block)
 - [35. Create a non-clickable menu item](#35-create-a-non-clickable-menu-item)
 - [36. Verify whether the theme has been installed, upgraded, or uninstalled completely](#36-verify-whether-the-theme-has-been-installed-upgraded-or-uninstalled-completely)
@@ -183,10 +182,6 @@ Change page type template to `Coming Soon`, then edit page properties, timer and
 (Also, changeable for a specific page via `Sticky Top Bar` page attribute)
 
  
-### 22. Fix the CTA below the slider (Full Width)
-On edit mode, click on the block: `Design & Custom Template > Cog Icon > Block Container Class > Disable Grid Container`
-
-
 ### 23. Add additional 'Main' Areas
 Set `Main Area Number` page attribute
  
@@ -310,4 +305,5 @@ On Pixel, all blocks are wrapped inside a container that has data attributes for
 1. data-area="Main : xxx" : the area of the block
 2. data-block="xxx" : block type eg: html, feature, faq etc
 3. data-template="xxx" : block template name
+4. class="xxxx" : custom classes often have ':' in their name
 
