@@ -150,7 +150,7 @@ PS1: Prior to 2.4, the custom files were placed in `\theme_pixel\themes\pixel\cs
 
 
 ### 18.1 Manually add new scripts
-1. Copy & Rename `\theme_pixel\themes\pixel\js\custom.dev.js.tmp` to `\application\config\pixel_theme\custom.dev.js` (This will automatically include the new file into the site footer without losing it in the next theme updates)
+1. Copy & Rename `\theme_pixel9\themes\pixel\js\custom.dev.js.tmp` to `\application\config\theme_pixel9\custom.dev.js` (This will automatically include the new file into the site footer without losing it in the next theme updates)
 
 
 ### 19. Change the Font Family
