@@ -19,7 +19,7 @@
 - [15. Enable the Footer Ribbon](#15-enable-the-footer-ribbon)
 - [16. Add the Cookie Disclaimer](#16-add-the-cookie-disclaimer)
 - [17. Change the Owl Slider template height/Button Label](#17-change-the-owl-slider-template-heightbutton-label)
-- [18. Manually add new classes, change styles, ...](#18-manually-add-new-classes-change-styles-)
+- [18. Manually add new styles](#18-manually-add-new-styles)
 - [18.1 Manually add new scripts](#181-manually-add-new-scripts)
 - [19. Change the Font Family](#19-change-the-font-family)
 - [19.1. Remove embeded google fonts](#191-remove-embeded-google-fonts)
@@ -51,8 +51,8 @@
 
 ### 1. Change the theme accent color
 1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
-2. Click on `Pencil` icon on the topbar, and then on `Default` preset
-3. Change `Accent` color, and then click on `Create New` to build a new `Custom Skin`
+2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any `Custom Skin` already created.
+3. Change `Accent` color, and then click on `Create New` or `Save Changes` to create/save changes
 4. Now at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `skin`.
 
 
@@ -141,15 +141,11 @@ The space between menu items can be tweaked in:
 `Dashboard > Pages & Theme > Pixel Options > Blocks > Image Sliders`
 
 
-### 18. Manually add new classes, change styles, ...
-Pixel comes with two specific files which house all your changes without losing them in the next updates. For using them:
-1. Create a folder in `\application\config\` and name it `pixel_theme`
-2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` (This will automatically include the new file into CSS without losing it in the next theme updates)
-3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less` (This will automatically include the new file into CSS without losing it on the next theme updates). You can copy each variable from `variables.less` to `variables.dev.less` and change it as you intend to.
-4. [only for 5.7.x] Open `\theme_pixel\themes\pixel\css\style5.7.less` and comment out line 4 & 45
-5. Clear the site cache.
-
-PS1: Prior to 2.4, the custom files were placed in `\theme_pixel\themes\pixel\css\less\custom.dev.less`. So if you upgrade from older versions, you need to copy your custom file to the new location.
+### 18. Manually add new styles
+1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
+2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any `Custom Skin` already created.
+3. Enable `Add Custom CSS`, click on `Edit CSS`, and then click on `Create New` or `Save Changes` to create/save changes
+4. Now at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `skin`.
 
 
 ### 18.1 Manually add new scripts
