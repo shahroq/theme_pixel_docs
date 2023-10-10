@@ -50,7 +50,9 @@
 
 
 ### 1. Change the theme accent color
-Once the theme has been installed, the accent color can be changed globally by using the built-in theme design customizer. Documentation on how to use this core functionality can be found [here](https://documentation.concrete5.org/editors/in-page-editing/the-toolbar/page-edit-drop-down/design).
+1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog Drop Box > Customize`
+2. Click on `Pencil` icon on the topbar, and then on `Default` preset
+3. Change `Accent` color, and then click on `Create New` to build a new `Custom Skin`
 
 
 ### 2. Enable the Transition Loader
