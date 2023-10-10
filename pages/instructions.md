@@ -68,9 +68,9 @@
 
 
 ### 5. Navigation Icon 
-Icons used in Pixel are `Font Awesome` icons Version 4.7. So in order to chnage them, you need to specify the title of icons as they have been named in the below link. Remember you only need the part that comes after `fa-`.
+Icons used in Pixel are `Font Awesome` icons Version 5.15.4. To chnage the icons, specify the title of icons as they have been named in the font awesome icons list. You only need the part that comes after `fa-`.
 
-[https://fontawesome.com/v4.7.0/icons/](https://fontawesome.com/v4.7.0/icons/)
+[https://fontawesome.com/v5/search](https://fontawesome.com/v5/search)
 
 
 ### 6. Change the main Navigation Type/Style
