@@ -50,9 +50,10 @@
 
 
 ### 1. Change the theme accent color
-1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog Drop Box > Customize`
+1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
 2. Click on `Pencil` icon on the topbar, and then on `Default` preset
 3. Change `Accent` color, and then click on `Create New` to build a new `Custom Skin`
+4. Now at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `skin`.
 
 
 ### 2. Enable the Transition Loader
