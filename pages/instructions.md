@@ -46,6 +46,7 @@
 - [36. Verify whether the theme has been installed, upgraded, or uninstalled completely](#36-verify-whether-the-theme-has-been-installed-upgraded-or-uninstalled-completely)
 - [37. Theme has not been installed, upgraded completely](#37-theme-has-not-been-installed-upgraded-completely)
 - [38. Find out the block/template used on demo/your site](#38-find-out-the-blocktemplate-used-on-demoyour-site)
+- [39. Turn on Dark Mode](#39-turn-on-dark-mode)
 
 
 
@@ -306,3 +307,5 @@ On Pixel, all blocks are wrapped inside a container that has data attributes for
 3. data-template="xxx" : block template name
 4. class="xxxx" : custom classes often have ':' in their name
 
+### 39. Turn on Dark Mode
+`Dashboard > Pages & Theme > Pixel Options > General > General > Dark Mode`
