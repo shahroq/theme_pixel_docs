@@ -25,7 +25,6 @@
 - [19.1. Remove embeded google fonts](#191-remove-embeded-google-fonts)
 - [20. Setup the Coming Soon page](#20-setup-the-coming-soon-page)
 - [21. Enable the Top Bar area](#21-enable-the-top-bar-area)
-- [21.1 Make the Top Bar sticky](#211-make-the-top-bar-sticky)
 - [23. Add additional 'Main' Areas](#23-add-additional-main-areas)
 - [24. Using Express Objects](#24-using-express-objects)
 - [25. Parallax Effect](#25-parallax-effect)
@@ -176,12 +175,6 @@ Change page type template to `Coming Soon`, then edit page properties, timer and
 (Also, changeable for a specific page via `Top Bar: Enable` page attribute)
 
 
-### 21.1 Make the Top Bar sticky
-`Dashboard > Pages & Theme > Pixel Options > Header > Top Bar Area > Sticky Top Bar`
-
-(Also, changeable for a specific page via `Sticky Top Bar` page attribute)
-
- 
 ### 23. Add additional 'Main' Areas
 Set `Main Area Number` page attribute
  
