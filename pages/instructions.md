@@ -141,14 +141,14 @@ The space between menu items can be tweaked in:
 
 
 ### 18. Manually add new styles
-Method 1: Via core customizer (`Default` preset)
+**Method 1**: Via core customizer (`Default` preset)
 1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
 2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any created skin under `Custom Skins`.
 3. Turn on `Custom CSS` switch, click on `Edit CSS`, and insert your CSS styles, and close the modal.
 4. Click on `Create New` or `Save Changes` to create/save the `Skin`.
 5. Back to the dashboard, at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `Skin`.
 
-Method 2: Via custom files (`Advance` preset)
+**Method 2**: Via custom files (`Advance` preset)
 `Advance` preset merges two external custom files into the compiled CSS file. These two files are automatically copied when installing/upgrading Pixel 9.
 1. First, check if the external custom files exist in `/application/config/theme_pixel9` folder. The files are `variables.dev.scss` and `custom.dev.scss`. If not, go to 18.2 and copy them manually first.
 2. Insert your own SASS/CSS styles inside these two files.
@@ -170,14 +170,14 @@ If there is no custom SASS files in `/application/config/theme_pixel9` folder, f
 
 
 ### 19. Change the Font Family
-Method 1: Via core customizer (`Default` preset)
+**Method 1**: Via core customizer (`Default` preset)
 1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
 2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any created skin under `Custom Skins`.
 3. Change the `Body Font`, `Heading Font`, or `Secondary Font`
 4. Click on `Create New` or `Save Changes` to create/save the `Skin`.
 5. Back to the dashboard, at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `Skin`.
 
-Method 2: Via custom files (`Advance` preset)
+**Method 2**: Via custom files (`Advance` preset)
 If you need to use other google fonts or embed your own font, use this method:
 1. First, check if the external custom files exist in `/application/config/theme_pixel9` folder. The files are `variables.dev.scss` and `custom.dev.scss`. If not, go to 18.2 and copy them manually first.
 2. Use the commented code inside `variables.dev.scss` for adding new fonts.
