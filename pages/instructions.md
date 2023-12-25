@@ -21,9 +21,9 @@
 - [17. Change the Owl Slider template height/Button Label](#17-change-the-owl-slider-template-heightbutton-label)
 - [18. Manually add new styles](#18-manually-add-new-styles)
 - [18.1 Manually add new scripts](#181-manually-add-new-scripts)
+- [18.2 Manually copy SASS custom files](#182-manually-copy-sass-custom-files)
 - [19. Change the Font Family](#19-change-the-font-family)
 - [19.1. Remove embeded google fonts](#191-remove-embeded-google-fonts)
-- [20. Setup the Coming Soon page](#20-setup-the-coming-soon-page)
 - [21. Enable the Top Bar area](#21-enable-the-top-bar-area)
 - [23. Add additional 'Main' Areas](#23-add-additional-main-areas)
 - [24. Using Express Objects](#24-using-express-objects)
@@ -35,11 +35,10 @@
 - [27.2 Optimizing your logo size for the theme header](#272-optimizing-your-logo-size-for-the-theme-header)
 - [28. Using customized auth pages (Login, Register, Forgot Password)](#28-using-customized-auth-pages-login-register-forgot-password)
 - [29. Replacing alternative home pages with the default home page](#29-replacing-alternative-home-pages-with-the-default-home-page)
-- [30. Assigning theme defined margin classes to a block](#30-assigning-theme-defined-margin-classes-to-a-block)
+- [30. Assigning theme-defined margin classes to a block](#30-assigning-theme-defined-margin-classes-to-a-block)
 - [31. Changing the theme footer color](#31-changing-the-theme-footer-color)
 - [32. Remove login/logout link from the footer](#32-remove-loginlogout-link-from-the-footer)
 - [32.1 Remove Account Menu from the footer](#321-remove-account-menu-from-the-footer)
-- [33. Fix file\_exists() issue](#33-fix-file_exists-issue)
 - [34. Change the email/telephone in Social Link block](#34-change-the-emailtelephone-in-social-link-block)
 - [35. Create a non-clickable menu item](#35-create-a-non-clickable-menu-item)
 - [36. Verify whether the theme has been installed, upgraded, or uninstalled completely](#36-verify-whether-the-theme-has-been-installed-upgraded-or-uninstalled-completely)
@@ -142,31 +141,51 @@ The space between menu items can be tweaked in:
 
 
 ### 18. Manually add new styles
+Method 1: Via core customizer (`Default` preset)
 1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
-2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any `Custom Skin` already created.
-3. Enable `Add Custom CSS`, click on `Edit CSS`, and then click on `Create New` or `Save Changes` to create/save changes
-4. Now at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `skin`.
+2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any created skin under `Custom Skins`.
+3. Turn on `Custom CSS` switch, click on `Edit CSS`, and insert your CSS styles, and close the modal.
+4. Click on `Create New` or `Save Changes` to create/save the `Skin`.
+5. Back to the dashboard, at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `Skin`.
+
+Method 2: Via custom files (`Advance` preset)
+`Advance` preset merges two external custom files into the compiled CSS file. These two files are automatically copied when installing/upgrading Pixel 9.
+1. First, check if the external custom files exist in `/application/config/theme_pixel9` folder. The files are `variables.dev.scss` and `custom.dev.scss`. If not, go to 18.2 and copy them manually first.
+2. Insert your own SASS/CSS styles inside these two files.
+3. You can also override theme SASS variables by copy/paste any variable from `/packages/theme_pixel9/themes/pixel/css/scss/partials/_variables.scss` into `/application/config/theme_pixel9/variables.dev.scss`.
+4. Then head to `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
+5. Click on `Pencil` icon on the topbar, and then on `Advance` preset or any created skin under `Custom Skins` (should be originated from `Advance` preset).
+6. Click on `Create New` or `Save Changes` to create/save the `Skin`.
+5. Back to the dashboard, at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `Skin`.
 
 
 ### 18.1 Manually add new scripts
-1. Copy & Rename `\theme_pixel9\themes\pixel\js\custom.dev.js.tmp` to `\application\config\theme_pixel9\custom.dev.js` (This will automatically include the new file into the site footer without losing it in the next theme updates)
+1. Copy and Rename `\theme_pixel9\themes\pixel\js\custom.dev.js.tmp` to `\application\config\theme_pixel9\custom.dev.js` (This will automatically include the new file into the site footer without losing it in the next theme updates)
+
+### 18.2 Manually copy SASS custom files
+If there is no custom SASS files in `/application/config/theme_pixel9` folder, follow these steps:
+1. Go to `/application/config` and create a folder named: `theme_pixel9`
+2. Copy these two files into the newly created folder: `/packages/theme_pixel9/themes/pixel/css/presets/advance/variables.dev.scss.tmp` and `/packages/theme_pixel9/themes/pixel/css/presets/advance/custom.dev.scss.tmp`
+3. Rename the files to `variables.dev.scss` and `custom.dev.scss` (remove .tmp at the end)
 
 
 ### 19. Change the Font Family
-Pixel comes with exact instruction on how to manually change the embed and assign new fonts to your site:
-1. First, proceed with the two steps at Instruction #18
-2. Include your fonts at `\theme_pixel\themes\pixel\css\less\custom.dev.less` (A sample is provided in this file which you can uncomment/use it.)
-3. Copy the lines that are responsible for assigning the fonts into the new `variables.dev.less` file. Some samples are also provided in this file which can be uncommented for your use case. 
+Method 1: Via core customizer (`Default` preset)
+1. `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown > Customize`
+2. Click on `Pencil` icon on the topbar, and then on `Default` preset or any created skin under `Custom Skins`.
+3. Change the `Body Font`, `Heading Font`, or `Secondary Font`
+4. Click on `Create New` or `Save Changes` to create/save the `Skin`.
+5. Back to the dashboard, at the `Dashboard > Pages & Theme > Themes > Pixel > General > Cog DropDown`, activate the newly created `Skin`.
+
+Method 2: Via custom files (`Advance` preset)
+If you need to use other google fonts or embed your own font, use this method:
+1. First, check if the external custom files exist in `/application/config/theme_pixel9` folder. The files are `variables.dev.scss` and `custom.dev.scss`. If not, go to 18.2 and copy them manually first.
+2. Use the commented code inside `variables.dev.scss` for adding new fonts.
+3. Head back to the dashboard, and create/update a new skin based on `Advance` preset (see #18).
  
+
  ### 19.1. Remove embeded google fonts
-As a part of the theme, Pixel loads a couple of google fonts. If you need these fonts to be removed from the final produced CSS file, you can do it by choosing `no-external-fonts` preset:
-```
-Cog icon (concrete toolbar) > Design > Theme > Customize > Preset > No External Fonts
-```
-
-
-### 20. Setup the Coming Soon page
-Change page type template to `Coming Soon`, then edit page properties, timer and background image, at `Dashboard > Pages & Theme > Pixel Options > Pages > Coming Soon`. You can also add blocks like Content and Social Icons via page editing UI.
+As a part of the theme, Pixel loads a couple of google fonts. If you need these fonts to be removed from the final compiled CSS file, first follow the instruction #18. The google fonts are housed inside `variables.dev.scss`. Remove them, and resave the skin.
 
 
 ### 21. Enable the Top Bar area
@@ -216,7 +235,7 @@ Pixel already contains 2 `color-overlay-black` & `color-overlay-white` classes. 
 
 
 ### 27.1 Assigning a different logo for a page
-Copy the page-specific logo in `\application\config\pixel_theme\` folder and rename to `<your-main-logo-name>-<cID>`. Multiple logos including dark, retina etc can be assigned for a page.
+Copy the page-specific logo in `\application\config\pixel_theme9\` folder and rename to `<your-main-logo-name>-<cID>`. Multiple logos including dark, retina etc can be assigned for a page.
 (`cID` is your page ID)
 
 ### 27.2 Optimizing your logo size for the theme header
@@ -240,7 +259,7 @@ Add below code to `\application\config\app.php`
 On the Sitemap drag the alternative page onto the default homepage, then select Copy Page: Replace `Home` with the copy of `Home 1`.
 
 
-### 30. Assigning theme defined margin classes to a block
+### 30. Assigning theme-defined margin classes to a block
 1. In the edit mode, click on the block and select `Design & Custom Template`.
 2. Click on `cog` icon and add one of these classes into `Custom Class` field:
     - Standard Margin: `leftmargin`, `rightmargin`, `topmargin`, `bottommargin`, `allmargin`
@@ -260,13 +279,6 @@ Once the theme has been installed, the footer color can be changed globally by u
 ### 32.1 Remove Account Menu from the footer
 `Dashboard > System & Settings > Public Profiles > Show the account menu when logged in.`
 
-
-### 33. Fix file_exists() issue
-This problem, affecting some servers, is caused by the less interpreter library that has been used in concrete5. If you face this issue, starting from 2.3.0, you can fix it easily by following these steps:
-1. Create a folder in `\application\config\` and name it `pixel_theme`
-2. Copy & Rename `\theme_pixel\themes\pixel\css\less\custom.dev.less.tmp` to `\application\config\pixel_theme\custom.dev.less` 
-3. Copy & Rename `\theme_pixel\themes\pixel\css\less\variables.dev.less.tmp` to `\application\config\pixel_theme\variables.dev.less`
-4. Clear the site cache.
 
 
 ### 34. Change the email/telephone in Social Link block
