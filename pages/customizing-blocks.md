@@ -10,3 +10,5 @@ If you are comfortable using the browser `Inspect Element` feature, you can also
 To customize a block appearance
 1. Select one of the pixel templates for the block
 2. Click on the `Cog` icon: Custom Class and you should be able to see a list of customization options. Choose relevant classes and Save the block.
+
+Click [here](customizing-blocks-migration.md) to see the list of previous templates and equivalent templates/classes for them.
