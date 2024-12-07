@@ -2,10 +2,16 @@
 
 To read docs for other versions, e.g. [2.4](https://github.com/shahroq/theme_pixel_docs/tree/2.4.0), switch to respective branches. 
 
+To upgrade from Pixel2 to Pixel, this tool, developed by [mlocati](https://github.com/mlocati), can be used: 
+https://github.com/mlocati/pixel2to9
+
 Contributions are welcome via [issues](https://github.com/shahroq/theme_pixel_docs/issues) and [pull requests](https://github.com/shahroq/theme_pixel_docs/pulls).
+
+
 
 ### Table of Contents
 - [Installation](pages/installation.md)
 - [Instructions](pages/instructions.md)
 - [Customizing Blocks](pages/customizing-blocks.md)
 - [Snippets](pages/snippets.md)
+- [Upgrading from Pixel 2](pages/upgrade-from-2-to9.md)
