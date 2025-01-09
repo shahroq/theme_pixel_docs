@@ -14,4 +14,3 @@ Contributions are welcome via [issues](https://github.com/shahroq/theme_pixel_do
 - [Instructions](pages/instructions.md)
 - [Customizing Blocks](pages/customizing-blocks.md)
 - [Snippets](pages/snippets.md)
-- [Upgrading from Pixel 2](pages/upgrade-from-2-to9.md)
