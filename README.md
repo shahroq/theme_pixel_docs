@@ -1,3 +1,4 @@
+![Pixel Logo](/assets/logo.png)
 ## ConcreteCMS [Pixel Theme](https://www.concrete5.org/marketplace/themes/pixel-9) Documentation v9.0.0
 
 To read docs for other versions, e.g. [2.4](https://github.com/shahroq/theme_pixel_docs/tree/2.4.0), switch to respective branches. 
