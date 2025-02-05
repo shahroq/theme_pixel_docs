@@ -45,7 +45,7 @@
 - [37. Theme has not been installed, upgraded completely](#37-theme-has-not-been-installed-upgraded-completely)
 - [38. Find out the block/template used on demo/your site](#38-find-out-the-blocktemplate-used-on-demoyour-site)
 - [39. Turn on Dark Mode](#39-turn-on-dark-mode)
-
+- [40. Setting up the Mega Menu](#40-setting-up-the-mega-menu)
 
 
 ### 1. Change the theme accent color
@@ -314,3 +314,9 @@ On Pixel, all blocks are wrapped inside a container that has data attributes for
 
 ### 39. Turn on Dark Mode
 `Dashboard > Pages & Theme > Pixel Options > General > General > Dark Mode`
+
+### 40. Setting up the Mega Menu
+1. Create a stack, and add a `Nestable Manual Nav` block with `Mega Menu` template.
+2. On your sitemap, add `Mega Menu Content` attribute to the parent page. Then insert the stack name. (The parent page should be on level 1 only)
+3. Add `Mega Menu Column` attribute to specify the number of columns.
+4. Add `Mega Menu Background Image` attribute to specify an image that will display on the right-bottom of the mega menu container.
